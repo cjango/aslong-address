@@ -1,0 +1,30 @@
+{
+    "name": "aslong/address",
+    "description": "用户地址管理",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "C.Jason",
+            "email": "chenjxlg@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "laravel/framework": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "AsLong\\Address": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AsLong\\Address\\ServiceProvider"
+            ],
+            "aliases": {
+                "Address": "AsLong\\Address\\Facades\\Address"
+            }
+        }
+    }
+}
