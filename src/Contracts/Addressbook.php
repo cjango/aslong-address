@@ -7,6 +7,7 @@ namespace AsLong\Address\Contracts;
  */
 interface Addressbook
 {
+
     /**
      * 收件人姓名
      * @return string
@@ -23,6 +24,6 @@ interface Addressbook
      * 收件人详细地址
      * @return string
      */
-    public function getAddress();
+    public function getAddress($seperator = null);
 
 }

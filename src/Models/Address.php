@@ -23,6 +23,7 @@ class Address extends Model
 
     public static function boot()
     {
+        parent::boot();
         static::addGlobalScope(new OrderScope);
     }
 

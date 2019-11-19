@@ -27,12 +27,12 @@ trait Addressable
      * 收件人详细地址
      * @return string
      */
-    public function getAddress()
+    public function getAddress($seperator = '')
     {
         return
-            $this->province->name .
-            $this->city->name .
-            $this->district->name .
+            $this->province->name . $seperator .
+            $this->city->name . $seperator .
+            $this->district->name . $seperator .
             $this->address;
     }
 
