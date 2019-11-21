@@ -2,13 +2,14 @@
 
 namespace AsLong\Address\Models;
 
+use AsLong\Address\Contracts\Addressbook;
 use AsLong\Address\Scopes\OrderScope;
 use AsLong\Address\Traits\Addressable;
 use AsLong\Address\Traits\HasArea;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Address extends Model
+class Address extends Model implements Addressbook
 {
 
     use Addressable, HasArea, SoftDeletes;
