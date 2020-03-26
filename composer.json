@@ -14,17 +14,14 @@
     },
     "autoload": {
         "psr-4": {
-            "AsLong\\": "src/"
+            "AsLong\\Address\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "AsLong\\Address\\ServiceProvider"
-            ],
-            "aliases": {
-                "Address": "AsLong\\Address\\Facades\\Address"
-            }
+            ]
         }
     }
 }
