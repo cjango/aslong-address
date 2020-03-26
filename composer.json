@@ -13,8 +13,8 @@
         "laravel/framework": "*"
     },
     "autoload": {
-        "psr-0": {
-            "AsLong\\Address": "src/"
+        "psr-4": {
+            "AsLong": "src/Address/"
         }
     },
     "extra": {
