@@ -10,14 +10,14 @@ class ServiceProvider extends LaravelServiceProvider
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
-            $this->publishes([__DIR__ . '/../config/config.php' => config_path('address.php')]);
-            $this->loadMigrationsFrom(__DIR__ . '/../database/migrations/');
+            $this->publishes([__DIR__ . '/../../config/config.php' => config_path('address.php')]);
+            $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations/');
         }
     }
 
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'address');
+        $this->mergeConfigFrom(__DIR__ . '/../../config/config.php', 'address');
     }
 
 }
