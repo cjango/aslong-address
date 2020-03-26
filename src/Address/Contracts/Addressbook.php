@@ -14,7 +14,7 @@ interface Addressbook
      * @Date: 2019/11/21 11:36 上午
      * @return string
      */
-    public function getName();
+    public function getName(): string;
 
     /**
      * Notes: 收件人电话
@@ -22,7 +22,7 @@ interface Addressbook
      * @Date: 2019/11/21 11:36 上午
      * @return string
      */
-    public function getMobile();
+    public function getMobile(): string;
 
     /**
      * Notes: 获取省份ID
@@ -30,7 +30,7 @@ interface Addressbook
      * @Date: 2019/11/21 11:36 上午
      * @return int
      */
-    public function getProvinceId();
+    public function getProvinceId(): int;
 
     /**
      * Notes: 获取城市ID
@@ -38,7 +38,7 @@ interface Addressbook
      * @Date: 2019/11/21 11:34 上午
      * @return int
      */
-    public function getCityId();
+    public function getCityId(): int;
 
     /**
      * Notes: 获取地区ID
@@ -46,7 +46,7 @@ interface Addressbook
      * @Date: 2019/11/21 11:34 上午
      * @return int
      */
-    public function getDistrictId();
+    public function getDistrictId(): int;
 
     /**
      * Notes: 获取地址
@@ -54,15 +54,15 @@ interface Addressbook
      * @Date: 2019/11/21 11:34 上午
      * @return string
      */
-    public function getAddress();
+    public function getAddress(): string;
 
     /**
      * Notes: 收件人完整地址
      * @Author: <C.Jason>
      * @Date: 2019/11/21 11:35 上午
-     * @param null $seperator 分隔符
+     * @param null $separators 分隔符
      * @return string
      */
-    public function getFullAddress($seperator = null);
+    public function getFullAddress($separators = null): string;
 
 }

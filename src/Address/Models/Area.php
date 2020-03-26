@@ -15,7 +15,7 @@ class Area extends Model
      */
     public function parent()
     {
-        return $this->belongsTo(Area::class, 'parent_id');
+        return $this->belongsTo(__CLASS__, 'parent_id');
     }
 
     /**
@@ -24,9 +24,9 @@ class Area extends Model
      * @Date: 2019/11/19 3:01 下午
      * @return mixed
      */
-    function children()
+    public function children()
     {
-        return $this->hasMany(Area::class, 'parent_id');
+        return $this->hasMany(__CLASS__, 'parent_id');
     }
 
 }
