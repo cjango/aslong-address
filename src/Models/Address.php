@@ -48,8 +48,9 @@ class Address extends Model implements Addressbook
     {
         Address::where('user_id', $this->user_id)->update(['def' => 0]);
 
-        $this->def = 1;
-        $this->save();
+        $address      = $this->refresh();
+        $address->def = 1;
+        $address->save();
 
         return true;
     }
